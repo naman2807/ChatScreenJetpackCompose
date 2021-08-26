@@ -25,6 +25,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    @Composable
     fun Conversation(messages: List<Message>){
 
     }
