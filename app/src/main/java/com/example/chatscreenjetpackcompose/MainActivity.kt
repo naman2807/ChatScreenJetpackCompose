@@ -17,4 +17,9 @@ class MainActivity : ComponentActivity() {
            Text(text ="Hello World")
         }
     }
+
+    @Composable
+    fun MessageCard(name: String) {
+        Text(text = "Hello $name!")
+    }
 }
