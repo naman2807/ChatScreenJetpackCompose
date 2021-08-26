@@ -29,4 +29,6 @@ class MainActivity : ComponentActivity() {
     fun PreviewMessageCard() {
         MessageCard("Android")
     }
+
+    data class Message(val author: String, val content:String)
 }
