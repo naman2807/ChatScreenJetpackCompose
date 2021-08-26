@@ -44,11 +44,14 @@ class MainActivity : ComponentActivity() {
 
             Column {
                 Text(text = message.author,
-                color = MaterialTheme.colors.primary
+                color = MaterialTheme.colors.primary,
+                    style = MaterialTheme.typography.subtitle2
                 )
                 // Add a vertical space between the author and message texts
                 Spacer(modifier = Modifier.height(4.dp))
-                Text(text = message.content)
+                Text(text = message.content,
+                style = MaterialTheme.typography.body2
+                )
             }
         }
     }
