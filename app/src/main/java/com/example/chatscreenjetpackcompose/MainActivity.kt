@@ -25,6 +25,10 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    fun Conversation(messages: List<Message>){
+
+    }
+
     @Composable
     fun MessageCard(message: Message) {
         // Add padding around our message
