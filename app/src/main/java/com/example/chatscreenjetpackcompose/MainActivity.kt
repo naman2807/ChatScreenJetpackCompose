@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MessageCard(message = Message("Colleague", "First Chat"))
+            Conversation(messages = SampleData.conversationSample)
         }
     }
 
@@ -77,7 +77,7 @@ class MainActivity : ComponentActivity() {
     )
     @Composable
     fun PreviewMessageCard() {
-        MessageCard(message = Message("Colleague", "First Chat"))
+        Conversation(messages = SampleData.conversationSample)
 
     }
 
