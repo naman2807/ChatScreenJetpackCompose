@@ -26,11 +26,12 @@ class MainActivity : ComponentActivity() {
     fun MessageCard(message: Message) {
         Row() {
            Image(painter = painterResource(id = R.drawable.profile), contentDescription ="profile" )
+            Column() {
+                Text(text = "${message.author}!")
+                Text(text = "${message.content}!")
+            }
         }
-        Column() {
-            Text(text = "${message.author}!")
-            Text(text = "${message.content}!")
-        }
+
 
     }
 
